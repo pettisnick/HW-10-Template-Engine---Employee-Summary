@@ -6,12 +6,13 @@ const path = require("path");
 const fs = require("fs");
 
 const OUTPUT_DIR = path.resolve(__dirname, "output");
-const outputPath = path.join(OUTPUT_DIR, "team.html");
+const outputPath = path.join(OUTPUT_DIR, "team.html");   
 
-const render = require("./lib/htmlRenderer");
+const render = require("./lib/htmlRenderer");  //take in employees object and send through renderer. and put to outppath
+
 
 const questions = [
-
+    
     {
         type: "input",
         name: "name",
@@ -96,11 +97,17 @@ async function teamMember() {
         employees.push(person);
         teamMember();
     } else if (employeePosition.role === "I don't want to add any more team members!") {
+        fs.writeFile(outputPath, render(employees), function (err) {
+            if (err) {
+            return console.log(err);
+            }
+            console.log("The file was created!");
+        });
         console.log(employees)
         return
-
+        
     }
-
+    
 }
 //Function call to initialize program
 init();
