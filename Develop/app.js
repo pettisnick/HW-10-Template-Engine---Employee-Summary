@@ -34,7 +34,7 @@ const questions = [
 const managerQuest = [
     {
         type: "input",
-        name: "office number",
+        name: "officeNumber",
         message: "What is your office number?",
     }
 ]

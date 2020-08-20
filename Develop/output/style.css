@@ -2,20 +2,27 @@ body {
     background: rgb(240, 236, 236);
 }
 
-.jumbo {
-    background: red;
+.jumbotron {
+    background: rgb(224, 46, 46);
+    border: solid black 2px;
 }
 
-#card-header {
+.card-header {
     background: rgb(224, 46, 46);
-    border: solid black 1px;
 }
 
 h1 {
-    color: white;
+    color: black;
 }
 
 
 .card {
     border: solid black 1px;
+    padding: 5px;
+}
+
+@media screen and (max-width: 500px) {
+    .card {
+        width: 100%;
+    }
 }
