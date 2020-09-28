@@ -4,6 +4,9 @@ One of the most important aspects of programming is writing code that is readabl
 
 Here is the Youtube tutorial to my application: [Employee Summary](https://youtu.be/rvJNoImiM9Y)
 
+Here is an image of my application
+![employee summary](https://user-images.githubusercontent.com/65740432/94488561-d4250580-01b0-11eb-93cb-df5ffcb56119.PNG)
+
 ## Instructions
 
 You will build a software engineering team generator command line application. The application will prompt the user for information about the team manager and then information about the team members. The user can input any number of team members, and they may be a mix of engineers and interns. This assignment must also pass all unit tests. When the user has completed building the team, the application will create an HTML file that displays a nicely formatted team roster based on the information provided by the user. Following the [common templates for user stories](https://en.wikipedia.org/wiki/User_story#Common_templates), we can frame this challenge as follows:
